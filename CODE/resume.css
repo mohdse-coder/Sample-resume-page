@@ -1,0 +1,275 @@
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+:root {
+    --bg-primary: #0A1628;      /* پس‌زمینه‌ی اصلی (آبی بسیار تیره) */
+    --bg-secondary: #1E3A5F;    /* پس‌زمینه‌ی کارت‌ها و بخش‌ها */
+    --text-primary: #FFFFFF;    /* متن اصلی (سفید) */
+    --text-secondary: #EAEAEA;  /* متن فرعی (طلسی روشن) */
+    --accent-color: #F4A460;    /* رنگ تأکیدی (طلایی-نارنجی) */
+}
+
+body {
+    font-family: 'Tahoma', 'Arial', sans-serif;
+    background: linear-gradient(135deg, #0A1628, #1E3A5F, #2A4A6F);
+    color: var(--text-primary);
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    line-height: 1.6;
+    padding-top: 100px; /* جا برای هدر ثابت */
+    min-height: 100vh;
+
+}
+
+header{
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 20px 300px;
+margin: 20px 0;
+border-radius: 10px;
+background-color: var(--bg-secondary);
+position: relative;
+position: fixed;
+top: 0;
+left: 20px;
+right: 20px;
+z-index: 1000;
+    
+    /* شیشه‌ای کردن */
+background: rgba(30, 58, 95, 0.2); /* شفاف */
+backdrop-filter: blur(12px);
+-webkit-backdrop-filter: blur(12px);
+border-bottom: solid rgba(255, 255, 255, 0.1);
+}
+
+.logo {
+    position: absolute;
+    right: 30px;            /* فاصله از لبه‌ی سمت راست هدر */
+    top: 50%;               /* نصف ارتفاع هدر */
+    transform: translateY(-50%); /* آن را دقیقاً در وسط عمودی قرار می‌دهد */
+    width: 50px;            /* یا هر اندازه‌ای که دوست داری */
+    height: 50px;
+}
+
+section, footer {
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+h1 {
+    color: var(--text-primary);
+    font-size: 60px;
+}
+
+p{
+   color: var(--text-primary);
+    font-size: 25px; 
+}
+
+.maharats{
+    color: var(--text-primary);
+    font-size: 20px;
+
+}
+
+a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+
+
+a:hover {
+    text-decoration: underline;
+    color: #000000;              /* تغییر رنگ به طلایی */
+}
+
+
+button:hover {
+    background-color: #e69550; /* کمی تیره‌تر از رنگ تأکیدی */
+}
+
+
+
+.about_me{
+position: relative;
+size: 150px;
+height: 600px;
+padding-top: 60px;
+display: flex;
+align-items: center;
+gap: 20px;
+}
+
+
+.woman_pic{
+position: absolute;
+left: 80px;            /* فاصله از لبه‌ی سمت راست هدر */
+top: 53%;               /* نصف ارتفاع هدر */
+transform: translateY(-50%); /* آن را دقیقاً در وسط عمودی قرار می‌دهد */
+width: 400px;            /* یا هر اندازه‌ای که دوست داری */
+height: 400px;
+align-items: center;
+}
+
+.col-right{
+background-color: var(--bg-secondary);
+flex: 1.5;
+padding: 20px;
+margin: 20px 0;
+height: 500px;
+border-radius: 5px;
+}
+.col-left{
+background-color: var(--bg-secondary);
+height: 500px;
+border-radius: 5px;
+flex: 1;
+}
+
+.email_about_me{
+position: absolute;
+right: 500px;   
+}
+
+.maharatha{
+background-color: var(--bg-secondary);
+size: 150px;
+height: 550px;
+padding-top: 60px;
+}
+
+.sabege{
+background-color: var(--bg-secondary);
+size: 150px;
+height: 550px;
+padding-top: 60px; 
+position: relative;
+
+}
+
+.uni_pic{
+position: absolute;
+left: 100px;            /* فاصله از لبه‌ی سمت راست هدر */
+top: 50%;               /* نصف ارتفاع هدر */
+transform: translateY(-50%); /* آن را دقیقاً در وسط عمودی قرار می‌دهد */
+width: 500px;            /* یا هر اندازه‌ای که دوست داری */
+height: 500px;
+object-fit: cover;
+border-radius: 20px;
+}
+
+.form_send_msg{
+background-color: var(--bg-secondary);
+size: 150px;
+height: 550px;
+padding-top: 60px;
+}
+
+.send_msg{
+    display: block;
+    height: 30px;
+    width: 200px;
+    border-radius: 3px;
+    
+}
+
+.send_msg:focus {
+    border: 5px solid var(--accent-color);
+    outline: none;
+    background-color: #f0f8ff;
+}
+
+.button_send_msg{
+    display: block;
+    background-color: var(--accent-color);
+    color: var(--bg-primary);
+    right: 250px;            /* فاصله از لبه‌ی سمت راست هدر */
+    transform: translateY(-100%); /* آن را دقیقاً در وسط عمودی قرار می‌دهد */
+    width: 40px;            /* یا هر اندازه‌ای که دوست داری */
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin: 0 215px;
+}
+
+
+
+footer{
+    font-size: 30px;
+}
+
+/* ========== بخش پروژه و نمونه کار ========== */
+.nmonekar {
+    display: flex;              /* فعال کردن فلکس‌باکس */
+    flex-direction: row-reverse;       /* چیدمان افقی (عکس چپ، متن راست) */
+    gap: 10px;                /* فاصله بین عکس‌ها و متن */
+    align-items: flex-start;   /* تراز کردن از بالا */
+    background-color: var(--bg-secondary);
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.nmonekar_matn {
+    flex: 1;                   /* متن‌ها ۱ قسمت از فضا را بگیرند */
+    order: 2;                  /* متن‌ها در سمت راست قرار گیرند */
+}
+
+.grid-container {
+    flex: 1;                   /* عکس‌ها ۲ قسمت از فضا را بگیرند (بزرگ‌تر) */
+    order: 1;                  /* عکس‌ها در سمت چپ قرار گیرند */
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* ۲ ستون برای عکس‌ها */
+    gap: 15px;
+}
+
+.grid_item {
+    text-align: center;
+    
+}
+
+.grid_item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+
+/* ===== موبایل (عرض کمتر از 768px) ===== */
+@media (max-width: 768px) {
+    h1 { font-size: 30px; }
+    p { font-size: 16px; }
+    header { padding: 20px 100px; }
+    .uni_pic ,.email_about_me { width: 100%; height: auto; position: static; transform: none; }
+    .maharatha, .sabege, .form_send_msg  { height: auto; }
+    .woman_pic {width: 100%;  height:auto ; position: static;  transform: translateY(50%);}
+    .grid-container{display: block;}
+    .grid_item img {width: 80%; margin: 0 auto;}
+    .nmonekar_matn p{padding: 20px 0 80px 0;}
+}
+
+/* ===== تبلت (عرض بین 769px تا 1024px) ===== */
+@media (min-width: 769px) and (max-width: 1024px) {
+    h1 { font-size: 40px; }
+    p { font-size: 18px; }
+    header { padding: 20px 100px; }
+    .woman_pic { width: 250px; height: 250px; }
+    .uni_pic ,.email_about_me { width: 100%; height: auto; position: static; transform: none; }
+    .maharatha, .sabege, .form_send_msg  { height: auto; }
+    .woman_pic {width: 100%;  height:auto ; position: static;  transform: translateY(50%);}
+    .grid-container{display: block;}
+    .nmonekar_matn p{padding: 20px 0 80px 0;}
+}
+
+/* ===== دسکتاپ (عرض بیشتر از 1025px) ===== */
+@media (min-width: 1025px) {
+    /* کدهای مخصوص دسکتاپ اینجا میاد (اگه چیزی لازم باشه) */
+}
